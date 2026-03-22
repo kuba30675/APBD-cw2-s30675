@@ -1,4 +1,4 @@
-﻿namespace APBD_cw2_Rental;
+﻿namespace APBD_cw2_Rental.Equipment;
 
 public class Camera(string sensorType, double megapixels, string brand, string name, double dp) : Gear(name, brand, dp)
 {

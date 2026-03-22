@@ -1,4 +1,4 @@
-﻿namespace APBD_cw2_Rental;
+﻿namespace APBD_cw2_Rental.Equipment;
 
 public class Laptop(int ram, string cpu, string name, string brand, double dp) : Gear(name, brand, dp)
 {

@@ -1,4 +1,4 @@
-﻿namespace APBD_cw2_Rental;
+﻿namespace APBD_cw2_Rental.Equipment;
 
 public class Phone(int bCapacity, double screenSize, bool has5G, string name, string brand, double dp)
     : Gear(name, brand, dp)

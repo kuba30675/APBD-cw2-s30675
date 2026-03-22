@@ -1,4 +1,4 @@
-﻿namespace APBD_cw2_Rental;
+﻿namespace APBD_cw2_Rental.Equipment;
 
 public abstract class Gear
 {
