@@ -2,7 +2,7 @@
 
 public abstract class Gear
 {
-    private static int counter = 0;
+    private static int _counter = 0;
     public int Id { get; }
     public string Name { get; }
     public bool IsAvailable { get; set; } = true;
@@ -13,7 +13,7 @@ public abstract class Gear
     {
         this.Name = name;
         this.Brand = brand;
-        this.Id = counter++;
+        this.Id = _counter++;
         this.DailyPrice = dp;
     }
 }
