@@ -23,6 +23,7 @@ public class Lease
         LeaseDate = leaseDate;
         LeasedFor = leasedFor;
         DaysCurrently = daysCurrently;
+        Rental.AllLeases.Add(this);
     }
 
     public override string ToString()

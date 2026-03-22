@@ -1,4 +1,6 @@
-﻿namespace APBD_cw2_Rental.Equipment;
+﻿using APBD_cw2_Rental.Service;
+
+namespace APBD_cw2_Rental.Equipment;
 
 public abstract class Gear
 {
@@ -15,5 +17,6 @@ public abstract class Gear
         this.Brand = brand;
         this.Id = _counter++;
         this.DailyPrice = dp;
+        Rental.Stash.Add(this);
     }
 }
