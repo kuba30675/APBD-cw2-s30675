@@ -19,4 +19,10 @@ public abstract class Gear
         this.DailyPrice = dp;
         Rental.Stash.Add(this);
     }
+
+    public override string ToString()
+    {
+        return
+            $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(IsAvailable)}: {IsAvailable}, {nameof(Brand)}: {Brand}, {nameof(DailyPrice)}: {DailyPrice}";
+    }
 }

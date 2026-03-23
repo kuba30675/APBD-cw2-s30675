@@ -8,13 +8,13 @@ public class Lease
     public int Id { get; }
     public Gear Gear { get; }
     public User User { get; }
-    public string LeaseDate { get; }
+    public DateTime LeaseDate { get; }
     //LeasedFor oznacza liczbe dni na ile wypozyczono sprzet
     public int LeasedFor { get; set; }
     //DaysCurrently to ile aktualnie dni wypozyczenia minelo
     public int DaysCurrently { get; set; }
 
-    public Lease(Gear gear, User user, string leaseDate, int leasedFor, int daysCurrently)
+    public Lease(Gear gear, User user, DateTime leaseDate, int leasedFor, int daysCurrently)
     {
         Id = _counter;
         _counter += 10;
