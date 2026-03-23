@@ -24,7 +24,11 @@ public abstract class User
 
     public void DisplayCurrentLeases()
     {
-        Console.Write("Current leases for user " + Name + " " + SecondName + " are:\n" + ActiveLeases);
+        Console.WriteLine("Current leases for user " + Name + " " + SecondName + " are:\n");
+        foreach (var lease in ActiveLeases)
+        {
+            Console.WriteLine(lease);
+        }
     }
 
     public void DisplayPastDeadlineLeases()
@@ -35,5 +39,11 @@ public abstract class User
             if (lease.DaysCurrently > lease.LeasedFor)
                 Console.WriteLine(lease);
         }
+    }
+
+    public override string ToString()
+    {
+        return
+            $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(SecondName)}: {SecondName}, {nameof(LeaseLimit)}: {LeaseLimit}";
     }
 }

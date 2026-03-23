@@ -1,0 +1,14 @@
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\bin\Debug\net10.0\APBD-cw2-Rental.exe
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\bin\Debug\net10.0\APBD-cw2-Rental.deps.json
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\bin\Debug\net10.0\APBD-cw2-Rental.runtimeconfig.json
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\bin\Debug\net10.0\APBD-cw2-Rental.dll
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\bin\Debug\net10.0\APBD-cw2-Rental.pdb
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.AssemblyInfoInputs.cache
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.AssemblyInfo.cs
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.csproj.CoreCompileInputs.cache
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.dll
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\refint\APBD-cw2-Rental.dll
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.pdb
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\APBD-cw2-Rental.genruntimeconfig.cache
+C:\Users\jakub\RiderProjects\APBD-cw2-Rental\obj\Debug\net10.0\ref\APBD-cw2-Rental.dll
