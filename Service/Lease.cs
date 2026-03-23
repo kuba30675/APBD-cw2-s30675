@@ -30,6 +30,6 @@ public class Lease
     public override string ToString()
     {
         return
-            $"{nameof(Id)}: {Id}, {nameof(Gear)}: {Gear}, {nameof(LeaseDate)}: {LeaseDate}, {nameof(LeasedFor)}: {LeasedFor}, {nameof(DaysCurrently)}: {DaysCurrently}";
+            $"{nameof(Id)}: {Id}, {nameof(Gear)}: {Gear}, {nameof(User)}: {User}, {nameof(LeaseDate)}: {LeaseDate}, {nameof(LeasedFor)}: {LeasedFor}, {nameof(DaysCurrently)}: {DaysCurrently}, {nameof(IsReturned)}: {IsReturned}";
     }
 }

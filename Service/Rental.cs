@@ -55,4 +55,13 @@ public static class Rental
             return lease.DaysCurrently * lease.Gear.DailyPrice;
         
     }
+
+    public static void Report()
+    {
+        ShowAllEquipment();
+        ShowAvailableEquipment();
+        Console.WriteLine("All the leases in the rental up to this point:");
+        foreach(var l in AllLeases)
+            Console.WriteLine(l);
+    }
 }
