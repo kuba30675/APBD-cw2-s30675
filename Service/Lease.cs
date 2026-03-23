@@ -13,6 +13,7 @@ public class Lease
     public int LeasedFor { get; set; }
     //DaysCurrently to ile aktualnie dni wypozyczenia minelo
     public int DaysCurrently { get; set; }
+    public bool IsReturned { get; set; } = false;
 
     public Lease(Gear gear, User user, DateTime leaseDate, int leasedFor, int daysCurrently)
     {

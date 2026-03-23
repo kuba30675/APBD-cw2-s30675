@@ -9,7 +9,7 @@ public static class Rental
 
     public static void ShowAllEquipment()
     {
-        Console.WriteLine("All the equipment available in the Rental:");
+        Console.WriteLine("All the equipment there is in the Rental:");
         foreach (var gear in Stash)
         {
             Console.WriteLine(gear);
@@ -29,6 +29,7 @@ public static class Rental
     {
         if (user.ActiveLeases.Count >= user.LeaseLimit || !gear.IsAvailable)
         {
+            Console.WriteLine("Cannot rent that item! Check the lease limit or availability of the item...");
             return;
         }
 
@@ -37,5 +38,21 @@ public static class Rental
         user.ActiveLeases.Add(lease);
         user.LeaseHistory.Add(lease);
         gear.IsAvailable = false;
+    }
+    //metoda Return zwraca ile uzytkownik ma do zaplaty po oddaniu
+    public static double Return(Lease lease)
+    {
+        lease.User.ActiveLeases.Remove(lease);
+        lease.Gear.IsAvailable = true;
+        lease.IsReturned = true;
+        if (lease.DaysCurrently > lease.LeasedFor)
+        {
+            //jesli termin zwrotu sie przedluzyl to kazdy dzien zwloki kosztuje dodatkowe 20% do ceny dziennej
+            return lease.LeasedFor * lease.Gear.DailyPrice +
+                   (lease.DaysCurrently - lease.LeasedFor) * lease.Gear.DailyPrice * 1.2;
+        }
+        else
+            return lease.DaysCurrently * lease.Gear.DailyPrice;
+        
     }
 }

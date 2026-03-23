@@ -19,7 +19,7 @@ public abstract class Gear
         this.DailyPrice = dp;
         Rental.Stash.Add(this);
     }
-
+    
     public override string ToString()
     {
         return
